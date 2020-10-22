@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Membuat Form HTML </title>
+</head>
+<body>
+
+    <form method="POST" action="simpan.php">
+        <table border="1">
+            <tr>
+                <td>Nama</td>
+                <td>
+                    <input type="text" name="nama" placeholder="Nama Lengkap" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk" value="L"> Laki-laki 
+                    <input type="radio" name="jk" value="P"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Provinsi</td>
+                <td>
+                    <select name="provinsi">
+                        <option>Jambi</option>
+                        <option>Riau</option>
+                        <option>Palembang</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Agreement</td>
+                <td>
+                    <input type="checkbox" name="persetujuan"> Saya setuju dengan peraturan yang berlaku.
+                </td>
+            </tr>
+            <tr>
+                <td>Deskripsi</td>
+                <td>
+                    <textarea name="deskripsi" placeholder="deskripsi" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Gambar</td>
+                <td>    
+                    <input type="file" name="gambar">
+                </td>
+            </tr>
+            <tr>
+                <td>Aksi</td>
+                <td>
+                    <input type="submit" value="Simpan">
+                    <input type="reset" value="Batal">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
